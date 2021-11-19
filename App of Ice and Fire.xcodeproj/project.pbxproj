@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC16EF322742BFF400C60D35 /* CharacterDetailLabeledNavigableToHouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC16EF312742BFF400C60D35 /* CharacterDetailLabeledNavigableToHouseTableViewCell.swift */; };
+		CC1751AE2735B8BB0048563A /* Resolver+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751AB2735B8BB0048563A /* Resolver+Extensions.swift */; };
+		CC1751AF2735B8BB0048563A /* NetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751AC2735B8BB0048563A /* NetworkDataSource.swift */; };
+		CC1751B02735B8BB0048563A /* NetworkBookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751AD2735B8BB0048563A /* NetworkBookModel.swift */; };
+		CC1751B32735B9100048563A /* NetworkCharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751B22735B9100048563A /* NetworkCharacterModel.swift */; };
+		CC1751B62735BA8F0048563A /* NetworkHouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751B52735BA8F0048563A /* NetworkHouseModel.swift */; };
+		CC1751B92735BE8B0048563A /* AnApiOfIceAndFireAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751B82735BE8B0048563A /* AnApiOfIceAndFireAPI.swift */; };
+		CC1751CE2735DBCE0048563A /* IceAndFireInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1751CD2735DBCE0048563A /* IceAndFireInteractor.swift */; };
+		CC22A76827368F9000A5741A /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC22A76727368F9000A5741A /* BooksTableViewController.swift */; };
+		CC22A76D273696D800A5741A /* BooksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC22A76C273696D800A5741A /* BooksTableViewCell.swift */; };
+		CC43EF6C27414DC200C1544E /* BookDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC43EF6B27414DC200C1544E /* BookDetailModel.swift */; };
+		CC454041274321B400849342 /* HouseDetailLabeledNavigableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC454040274321B400849342 /* HouseDetailLabeledNavigableTableViewCell.swift */; };
+		CC55743E273EE9CF003E1C7A /* DiskDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55743D273EE9CF003E1C7A /* DiskDataSource.swift */; };
+		CC55A0832747874D00F02F08 /* UITableViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC55A0822747874D00F02F08 /* UITableViewController+Extensions.swift */; };
+		CC580C852743092A00B6EF7A /* HouseDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C842743092A00B6EF7A /* HouseDetailTableViewCell.swift */; };
+		CC580C882743093F00B6EF7A /* HouseDetailLabeledTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C872743093F00B6EF7A /* HouseDetailLabeledTableViewCell.swift */; };
+		CC580C8B2743096B00B6EF7A /* HouseDetailNavigableToHouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C8A2743096B00B6EF7A /* HouseDetailNavigableToHouseTableViewCell.swift */; };
+		CC580C8E2743097E00B6EF7A /* HouseDetailLabeledNavigableToCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C8D2743097E00B6EF7A /* HouseDetailLabeledNavigableToCharacterTableViewCell.swift */; };
+		CC580C91274309E500B6EF7A /* HouseDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C90274309E500B6EF7A /* HouseDetailModel.swift */; };
+		CC580C9427430A0100B6EF7A /* HouseDetailModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C9327430A0100B6EF7A /* HouseDetailModelMapping.swift */; };
+		CC580C9827430A3000B6EF7A /* HouseDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C9727430A3000B6EF7A /* HouseDetailTableView.swift */; };
+		CC580C9B27430A5600B6EF7A /* HouseDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C9A27430A5600B6EF7A /* HouseDetailViewController.swift */; };
+		CC580C9E27430AE700B6EF7A /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580C9D27430AE700B6EF7A /* BaseModel.swift */; };
+		CC580CA127430B0200B6EF7A /* BaseModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC580CA027430B0200B6EF7A /* BaseModelMapping.swift */; };
+		CC7773C9274716DB00727218 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7773C8274716DB00727218 /* UIImage+Extensions.swift */; };
+		CC988D7F273F052800AED935 /* CharactersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D7E273F052800AED935 /* CharactersTableViewCell.swift */; };
+		CC988D82273F05F400AED935 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D81273F05F400AED935 /* CharactersTableViewController.swift */; };
+		CC988D88273F0AB500AED935 /* BookListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D87273F0AB500AED935 /* BookListModel.swift */; };
+		CC988D8C273F0AF800AED935 /* CharacterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D8B273F0AF800AED935 /* CharacterListModel.swift */; };
+		CC988D90273F0FC600AED935 /* ModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D8F273F0FC600AED935 /* ModelMapping.swift */; };
+		CC988D95273F3D1F00AED935 /* HouseListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D94273F3D1F00AED935 /* HouseListModel.swift */; };
+		CC988D99273F3D2E00AED935 /* HousesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D98273F3D2E00AED935 /* HousesTableViewController.swift */; };
+		CC988D9C273F3D4300AED935 /* HousesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC988D9B273F3D4300AED935 /* HousesTableViewCell.swift */; };
+		CCA6492E2735EB6C00FE2A77 /* Game-of-Thrones.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CCA6492D2735EB6C00FE2A77 /* Game-of-Thrones.ttf */; };
+		CCA9101F2741A16F00DDF09B /* CharacterDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA9101E2741A16F00DDF09B /* CharacterDetailTableViewCell.swift */; };
+		CCA910222741A1B500DDF09B /* CharacterDetailLabeledTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA910212741A1B500DDF09B /* CharacterDetailLabeledTableViewCell.swift */; };
+		CCA910252741A1C900DDF09B /* CharacterDetailNavigableToCharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA910242741A1C900DDF09B /* CharacterDetailNavigableToCharacterTableViewCell.swift */; };
+		CCA910292741A2EA00DDF09B /* CharacterDetailNavigableToHouseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA910282741A2EA00DDF09B /* CharacterDetailNavigableToHouseTableViewCell.swift */; };
+		CCBB615327400DF000B8B26B /* BookDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBB615227400DF000B8B26B /* BookDetailTableViewCell.swift */; };
+		CCBB615727400E0A00B8B26B /* BookDetailNavigableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBB615627400E0A00B8B26B /* BookDetailNavigableTableViewCell.swift */; };
+		CCBB615A27400E2200B8B26B /* BookDetailLabeledTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBB615927400E2200B8B26B /* BookDetailLabeledTableViewCell.swift */; };
+		CCBB615D27400EAC00B8B26B /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCBB615C27400EAC00B8B26B /* BookDetailViewController.swift */; };
+		CCD1F7F42735B41800EDB865 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1F7F32735B41800EDB865 /* AppDelegate.swift */; };
+		CCD1F7F62735B41800EDB865 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCD1F7F52735B41800EDB865 /* SceneDelegate.swift */; };
+		CCD1F7FB2735B41800EDB865 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD1F7F92735B41800EDB865 /* Main.storyboard */; };
+		CCD1F7FE2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCD1F7FC2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodeld */; };
+		CCD1F8002735B42300EDB865 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCD1F7FF2735B42300EDB865 /* Assets.xcassets */; };
+		CCD1F8032735B42300EDB865 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCD1F8012735B42300EDB865 /* LaunchScreen.storyboard */; };
+		CCD1F80D2735B5F000EDB865 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = CCD1F80C2735B5F000EDB865 /* Resolver */; };
+		CCE60AF42741BF1100DBA97C /* CharacterDetailNavigableToBookTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE60AF32741BF1100DBA97C /* CharacterDetailNavigableToBookTableViewCell.swift */; };
+		CCE60AF72741BF6300DBA97C /* CharacterDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE60AF62741BF6300DBA97C /* CharacterDetailTableView.swift */; };
+		CCE60B042741C02400DBA97C /* CharacterDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE60B032741C02400DBA97C /* CharacterDetailModel.swift */; };
+		CCE60B082741C03400DBA97C /* CharacterDetailModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE60B072741C03400DBA97C /* CharacterDetailModelMapping.swift */; };
+		CCE60B0B2741C05000DBA97C /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE60B0A2741C05000DBA97C /* CharacterDetailViewController.swift */; };
+		CCE9E37327405A43003EF938 /* HouseListModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE9E37227405A43003EF938 /* HouseListModelMapping.swift */; };
+		CCE9E37627405AD2003EF938 /* CharacterListModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE9E37527405AD2003EF938 /* CharacterListModelMapping.swift */; };
+		CCF920E427405E2000E0D8DE /* BookListModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF920E327405E2000E0D8DE /* BookListModelMapping.swift */; };
+		CCF920E727406CB900E0D8DE /* BookDetailTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF920E627406CB900E0D8DE /* BookDetailTableView.swift */; };
+		CCF920EA2740780600E0D8DE /* BookDetailModelMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF920E92740780600E0D8DE /* BookDetailModelMapping.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CC16EF312742BFF400C60D35 /* CharacterDetailLabeledNavigableToHouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailLabeledNavigableToHouseTableViewCell.swift; sourceTree = "<group>"; };
+		CC1751AB2735B8BB0048563A /* Resolver+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Resolver+Extensions.swift"; sourceTree = "<group>"; };
+		CC1751AC2735B8BB0048563A /* NetworkDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDataSource.swift; sourceTree = "<group>"; usesTabs = 0; };
+		CC1751AD2735B8BB0048563A /* NetworkBookModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkBookModel.swift; sourceTree = "<group>"; };
+		CC1751B22735B9100048563A /* NetworkCharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCharacterModel.swift; sourceTree = "<group>"; };
+		CC1751B52735BA8F0048563A /* NetworkHouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHouseModel.swift; sourceTree = "<group>"; };
+		CC1751B82735BE8B0048563A /* AnApiOfIceAndFireAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnApiOfIceAndFireAPI.swift; sourceTree = "<group>"; };
+		CC1751CD2735DBCE0048563A /* IceAndFireInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IceAndFireInteractor.swift; sourceTree = "<group>"; };
+		CC22A76727368F9000A5741A /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
+		CC22A76C273696D800A5741A /* BooksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewCell.swift; sourceTree = "<group>"; };
+		CC43EF6B27414DC200C1544E /* BookDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailModel.swift; sourceTree = "<group>"; };
+		CC454040274321B400849342 /* HouseDetailLabeledNavigableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailLabeledNavigableTableViewCell.swift; sourceTree = "<group>"; };
+		CC55743D273EE9CF003E1C7A /* DiskDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskDataSource.swift; sourceTree = "<group>"; };
+		CC55A0822747874D00F02F08 /* UITableViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extensions.swift"; sourceTree = "<group>"; };
+		CC580C842743092A00B6EF7A /* HouseDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CC580C872743093F00B6EF7A /* HouseDetailLabeledTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailLabeledTableViewCell.swift; sourceTree = "<group>"; };
+		CC580C8A2743096B00B6EF7A /* HouseDetailNavigableToHouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailNavigableToHouseTableViewCell.swift; sourceTree = "<group>"; };
+		CC580C8D2743097E00B6EF7A /* HouseDetailLabeledNavigableToCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailLabeledNavigableToCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		CC580C90274309E500B6EF7A /* HouseDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailModel.swift; sourceTree = "<group>"; };
+		CC580C9327430A0100B6EF7A /* HouseDetailModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailModelMapping.swift; sourceTree = "<group>"; };
+		CC580C9727430A3000B6EF7A /* HouseDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailTableView.swift; sourceTree = "<group>"; };
+		CC580C9A27430A5600B6EF7A /* HouseDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseDetailViewController.swift; sourceTree = "<group>"; };
+		CC580C9D27430AE700B6EF7A /* BaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		CC580CA027430B0200B6EF7A /* BaseModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseModelMapping.swift; sourceTree = "<group>"; };
+		CC7773C8274716DB00727218 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		CC988D7E273F052800AED935 /* CharactersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewCell.swift; sourceTree = "<group>"; };
+		CC988D81273F05F400AED935 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
+		CC988D87273F0AB500AED935 /* BookListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModel.swift; sourceTree = "<group>"; };
+		CC988D8B273F0AF800AED935 /* CharacterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListModel.swift; sourceTree = "<group>"; };
+		CC988D8F273F0FC600AED935 /* ModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMapping.swift; sourceTree = "<group>"; };
+		CC988D94273F3D1F00AED935 /* HouseListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListModel.swift; sourceTree = "<group>"; };
+		CC988D98273F3D2E00AED935 /* HousesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTableViewController.swift; sourceTree = "<group>"; };
+		CC988D9B273F3D4300AED935 /* HousesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousesTableViewCell.swift; sourceTree = "<group>"; };
+		CCA6492D2735EB6C00FE2A77 /* Game-of-Thrones.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Game-of-Thrones.ttf"; sourceTree = "<group>"; };
+		CCA9101E2741A16F00DDF09B /* CharacterDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CCA910212741A1B500DDF09B /* CharacterDetailLabeledTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailLabeledTableViewCell.swift; sourceTree = "<group>"; };
+		CCA910242741A1C900DDF09B /* CharacterDetailNavigableToCharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailNavigableToCharacterTableViewCell.swift; sourceTree = "<group>"; };
+		CCA910282741A2EA00DDF09B /* CharacterDetailNavigableToHouseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailNavigableToHouseTableViewCell.swift; sourceTree = "<group>"; };
+		CCBB615227400DF000B8B26B /* BookDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailTableViewCell.swift; sourceTree = "<group>"; };
+		CCBB615627400E0A00B8B26B /* BookDetailNavigableTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailNavigableTableViewCell.swift; sourceTree = "<group>"; };
+		CCBB615927400E2200B8B26B /* BookDetailLabeledTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailLabeledTableViewCell.swift; sourceTree = "<group>"; };
+		CCBB615C27400EAC00B8B26B /* BookDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
+		CCD1F7F02735B41800EDB865 /* App of Ice and Fire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "App of Ice and Fire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCD1F7F32735B41800EDB865 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCD1F7F52735B41800EDB865 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CCD1F7FA2735B41800EDB865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCD1F7FD2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = App_of_Ice_and_Fire.xcdatamodel; sourceTree = "<group>"; };
+		CCD1F7FF2735B42300EDB865 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCD1F8022735B42300EDB865 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCD1F8042735B42300EDB865 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCE60AF32741BF1100DBA97C /* CharacterDetailNavigableToBookTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailNavigableToBookTableViewCell.swift; sourceTree = "<group>"; };
+		CCE60AF62741BF6300DBA97C /* CharacterDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailTableView.swift; sourceTree = "<group>"; };
+		CCE60B032741C02400DBA97C /* CharacterDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModel.swift; sourceTree = "<group>"; };
+		CCE60B072741C03400DBA97C /* CharacterDetailModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModelMapping.swift; sourceTree = "<group>"; };
+		CCE60B0A2741C05000DBA97C /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		CCE9E37227405A43003EF938 /* HouseListModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseListModelMapping.swift; sourceTree = "<group>"; };
+		CCE9E37527405AD2003EF938 /* CharacterListModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListModelMapping.swift; sourceTree = "<group>"; };
+		CCF920E327405E2000E0D8DE /* BookListModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListModelMapping.swift; sourceTree = "<group>"; };
+		CCF920E627406CB900E0D8DE /* BookDetailTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailTableView.swift; sourceTree = "<group>"; };
+		CCF920E92740780600E0D8DE /* BookDetailModelMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailModelMapping.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCD1F7ED2735B41800EDB865 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD1F80D2735B5F000EDB865 /* Resolver in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC580C7D2743073A00B6EF7A /* HouseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CC580C822743076F00B6EF7A /* Model */,
+				CC580C812743076B00B6EF7A /* Cell */,
+				CC580C9727430A3000B6EF7A /* HouseDetailTableView.swift */,
+				CC580C9A27430A5600B6EF7A /* HouseDetailViewController.swift */,
+			);
+			name = HouseDetail;
+			sourceTree = "<group>";
+		};
+		CC580C7E2743074900B6EF7A /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				CCE9E36E27405966003EF938 /* BookDetail */,
+				CCE9E36D27405960003EF938 /* BookList */,
+			);
+			name = Book;
+			sourceTree = "<group>";
+		};
+		CC580C7F2743074E00B6EF7A /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				CCA9101A2741A12500DDF09B /* CharacterDetail */,
+				CCE9E36C2740595B003EF938 /* CharacterList */,
+			);
+			name = Character;
+			sourceTree = "<group>";
+		};
+		CC580C802743075300B6EF7A /* House */ = {
+			isa = PBXGroup;
+			children = (
+				CC580C7D2743073A00B6EF7A /* HouseDetail */,
+				CCE9E36B27405955003EF938 /* HouseList */,
+			);
+			name = House;
+			sourceTree = "<group>";
+		};
+		CC580C812743076B00B6EF7A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC580C872743093F00B6EF7A /* HouseDetailLabeledTableViewCell.swift */,
+				CC454040274321B400849342 /* HouseDetailLabeledNavigableTableViewCell.swift */,
+				CC580C8D2743097E00B6EF7A /* HouseDetailLabeledNavigableToCharacterTableViewCell.swift */,
+				CC580C8A2743096B00B6EF7A /* HouseDetailNavigableToHouseTableViewCell.swift */,
+				CC580C842743092A00B6EF7A /* HouseDetailTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CC580C822743076F00B6EF7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC580C90274309E500B6EF7A /* HouseDetailModel.swift */,
+				CC580C9327430A0100B6EF7A /* HouseDetailModelMapping.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCA9101A2741A12500DDF09B /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CCE60B022741C01700DBA97C /* Model */,
+				CCE60AF92741BF8500DBA97C /* Cell */,
+				CCE60AF62741BF6300DBA97C /* CharacterDetailTableView.swift */,
+				CCE60B0A2741C05000DBA97C /* CharacterDetailViewController.swift */,
+			);
+			name = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		CCD1F7E72735B41800EDB865 = {
+			isa = PBXGroup;
+			children = (
+				CCD1F7F22735B41800EDB865 /* App of Ice and Fire */,
+				CCD1F7F12735B41800EDB865 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCD1F7F12735B41800EDB865 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCD1F7F02735B41800EDB865 /* App of Ice and Fire.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCD1F7F22735B41800EDB865 /* App of Ice and Fire */ = {
+			isa = PBXGroup;
+			children = (
+				CCE9E35B27405839003EF938 /* Data */,
+				CCE9E361274058B3003EF938 /* Domain */,
+				CCE9E360274058A7003EF938 /* Font */,
+				CCE9E364274058D6003EF938 /* View */,
+				CCD1F8042735B42300EDB865 /* Info.plist */,
+				CCD1F7F32735B41800EDB865 /* AppDelegate.swift */,
+				CC1751AB2735B8BB0048563A /* Resolver+Extensions.swift */,
+				CCD1F7F52735B41800EDB865 /* SceneDelegate.swift */,
+				CCD1F7FF2735B42300EDB865 /* Assets.xcassets */,
+				CCD1F7FC2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodeld */,
+				CCD1F8012735B42300EDB865 /* LaunchScreen.storyboard */,
+				CCD1F7F92735B41800EDB865 /* Main.storyboard */,
+			);
+			path = "App of Ice and Fire";
+			sourceTree = "<group>";
+		};
+		CCE60AF92741BF8500DBA97C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC16EF312742BFF400C60D35 /* CharacterDetailLabeledNavigableToHouseTableViewCell.swift */,
+				CCA910212741A1B500DDF09B /* CharacterDetailLabeledTableViewCell.swift */,
+				CCE60AF32741BF1100DBA97C /* CharacterDetailNavigableToBookTableViewCell.swift */,
+				CCA910242741A1C900DDF09B /* CharacterDetailNavigableToCharacterTableViewCell.swift */,
+				CCA910282741A2EA00DDF09B /* CharacterDetailNavigableToHouseTableViewCell.swift */,
+				CCA9101E2741A16F00DDF09B /* CharacterDetailTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CCE60AFA2741BFA900DBA97C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CCBB615927400E2200B8B26B /* BookDetailLabeledTableViewCell.swift */,
+				CCBB615627400E0A00B8B26B /* BookDetailNavigableTableViewCell.swift */,
+				CCBB615227400DF000B8B26B /* BookDetailTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CCE60AFB2741BFBD00DBA97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC43EF6B27414DC200C1544E /* BookDetailModel.swift */,
+				CCF920E92740780600E0D8DE /* BookDetailModelMapping.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCE60AFC2741BFD000DBA97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC988D87273F0AB500AED935 /* BookListModel.swift */,
+				CCF920E327405E2000E0D8DE /* BookListModelMapping.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCE60AFD2741BFEA00DBA97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC988D94273F3D1F00AED935 /* HouseListModel.swift */,
+				CCE9E37227405A43003EF938 /* HouseListModelMapping.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCE60AFE2741BFF200DBA97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC988D8B273F0AF800AED935 /* CharacterListModel.swift */,
+				CCE9E37527405AD2003EF938 /* CharacterListModelMapping.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCE60AFF2741BFFA00DBA97C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC988D7E273F052800AED935 /* CharactersTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CCE60B002741C00100DBA97C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC988D9B273F3D4300AED935 /* HousesTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CCE60B012741C00B00DBA97C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CC22A76C273696D800A5741A /* BooksTableViewCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		CCE60B022741C01700DBA97C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CCE60B032741C02400DBA97C /* CharacterDetailModel.swift */,
+				CCE60B072741C03400DBA97C /* CharacterDetailModelMapping.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCE9E35B27405839003EF938 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CCE9E35F27405867003EF938 /* Disk */,
+				CCE9E36927405922003EF938 /* Network */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		CCE9E35F27405867003EF938 /* Disk */ = {
+			isa = PBXGroup;
+			children = (
+				CC55743D273EE9CF003E1C7A /* DiskDataSource.swift */,
+			);
+			name = Disk;
+			sourceTree = "<group>";
+		};
+		CCE9E360274058A7003EF938 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				CCA6492D2735EB6C00FE2A77 /* Game-of-Thrones.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		CCE9E361274058B3003EF938 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				CC1751CD2735DBCE0048563A /* IceAndFireInteractor.swift */,
+				CC988D8F273F0FC600AED935 /* ModelMapping.swift */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		CCE9E364274058D6003EF938 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC580C802743075300B6EF7A /* House */,
+				CC580C7F2743074E00B6EF7A /* Character */,
+				CC580C7E2743074900B6EF7A /* Book */,
+				CC580C9D27430AE700B6EF7A /* BaseModel.swift */,
+				CC580CA027430B0200B6EF7A /* BaseModelMapping.swift */,
+				CC7773C8274716DB00727218 /* UIImage+Extensions.swift */,
+				CC55A0822747874D00F02F08 /* UITableViewController+Extensions.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		CCE9E36927405922003EF938 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CCE9E36A27405932003EF938 /* Model */,
+				CC1751B82735BE8B0048563A /* AnApiOfIceAndFireAPI.swift */,
+				CC1751AC2735B8BB0048563A /* NetworkDataSource.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		CCE9E36A27405932003EF938 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CC1751AD2735B8BB0048563A /* NetworkBookModel.swift */,
+				CC1751B22735B9100048563A /* NetworkCharacterModel.swift */,
+				CC1751B52735BA8F0048563A /* NetworkHouseModel.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		CCE9E36B27405955003EF938 /* HouseList */ = {
+			isa = PBXGroup;
+			children = (
+				CCE60B002741C00100DBA97C /* Cell */,
+				CCE60AFD2741BFEA00DBA97C /* Model */,
+				CC988D98273F3D2E00AED935 /* HousesTableViewController.swift */,
+			);
+			name = HouseList;
+			sourceTree = "<group>";
+		};
+		CCE9E36C2740595B003EF938 /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				CCE60AFF2741BFFA00DBA97C /* Cell */,
+				CCE60AFE2741BFF200DBA97C /* Model */,
+				CC988D81273F05F400AED935 /* CharactersTableViewController.swift */,
+			);
+			name = CharacterList;
+			sourceTree = "<group>";
+		};
+		CCE9E36D27405960003EF938 /* BookList */ = {
+			isa = PBXGroup;
+			children = (
+				CCE60B012741C00B00DBA97C /* Cell */,
+				CCE60AFC2741BFD000DBA97C /* Model */,
+				CC22A76727368F9000A5741A /* BooksTableViewController.swift */,
+			);
+			name = BookList;
+			sourceTree = "<group>";
+		};
+		CCE9E36E27405966003EF938 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CCE60AFB2741BFBD00DBA97C /* Model */,
+				CCE60AFA2741BFA900DBA97C /* Cell */,
+				CCF920E627406CB900E0D8DE /* BookDetailTableView.swift */,
+				CCBB615C27400EAC00B8B26B /* BookDetailViewController.swift */,
+			);
+			name = BookDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCD1F7EF2735B41800EDB865 /* App of Ice and Fire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCD1F8072735B42300EDB865 /* Build configuration list for PBXNativeTarget "App of Ice and Fire" */;
+			buildPhases = (
+				CCD1F7EC2735B41800EDB865 /* Sources */,
+				CCD1F7ED2735B41800EDB865 /* Frameworks */,
+				CCD1F7EE2735B41800EDB865 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "App of Ice and Fire";
+			packageProductDependencies = (
+				CCD1F80C2735B5F000EDB865 /* Resolver */,
+			);
+			productName = "App of Ice and Fire";
+			productReference = CCD1F7F02735B41800EDB865 /* App of Ice and Fire.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCD1F7E82735B41800EDB865 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CCD1F7EF2735B41800EDB865 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = CCD1F7EB2735B41800EDB865 /* Build configuration list for PBXProject "App of Ice and Fire" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCD1F7E72735B41800EDB865;
+			packageReferences = (
+				CCD1F80B2735B5F000EDB865 /* XCRemoteSwiftPackageReference "Resolver" */,
+			);
+			productRefGroup = CCD1F7F12735B41800EDB865 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCD1F7EF2735B41800EDB865 /* App of Ice and Fire */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCD1F7EE2735B41800EDB865 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCA6492E2735EB6C00FE2A77 /* Game-of-Thrones.ttf in Resources */,
+				CCD1F8032735B42300EDB865 /* LaunchScreen.storyboard in Resources */,
+				CCD1F8002735B42300EDB865 /* Assets.xcassets in Resources */,
+				CCD1F7FB2735B41800EDB865 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCD1F7EC2735B41800EDB865 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCD1F7FE2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodeld in Sources */,
+				CC454041274321B400849342 /* HouseDetailLabeledNavigableTableViewCell.swift in Sources */,
+				CC580CA127430B0200B6EF7A /* BaseModelMapping.swift in Sources */,
+				CC1751CE2735DBCE0048563A /* IceAndFireInteractor.swift in Sources */,
+				CC22A76827368F9000A5741A /* BooksTableViewController.swift in Sources */,
+				CC988D7F273F052800AED935 /* CharactersTableViewCell.swift in Sources */,
+				CCE60B042741C02400DBA97C /* CharacterDetailModel.swift in Sources */,
+				CCE60B0B2741C05000DBA97C /* CharacterDetailViewController.swift in Sources */,
+				CC1751B62735BA8F0048563A /* NetworkHouseModel.swift in Sources */,
+				CC580C8B2743096B00B6EF7A /* HouseDetailNavigableToHouseTableViewCell.swift in Sources */,
+				CC1751AF2735B8BB0048563A /* NetworkDataSource.swift in Sources */,
+				CC988D9C273F3D4300AED935 /* HousesTableViewCell.swift in Sources */,
+				CCBB615A27400E2200B8B26B /* BookDetailLabeledTableViewCell.swift in Sources */,
+				CC580C91274309E500B6EF7A /* HouseDetailModel.swift in Sources */,
+				CCA910292741A2EA00DDF09B /* CharacterDetailNavigableToHouseTableViewCell.swift in Sources */,
+				CC43EF6C27414DC200C1544E /* BookDetailModel.swift in Sources */,
+				CC55743E273EE9CF003E1C7A /* DiskDataSource.swift in Sources */,
+				CC1751AE2735B8BB0048563A /* Resolver+Extensions.swift in Sources */,
+				CCA910222741A1B500DDF09B /* CharacterDetailLabeledTableViewCell.swift in Sources */,
+				CC988D90273F0FC600AED935 /* ModelMapping.swift in Sources */,
+				CC988D99273F3D2E00AED935 /* HousesTableViewController.swift in Sources */,
+				CCF920E727406CB900E0D8DE /* BookDetailTableView.swift in Sources */,
+				CC580C9B27430A5600B6EF7A /* HouseDetailViewController.swift in Sources */,
+				CCE60AF72741BF6300DBA97C /* CharacterDetailTableView.swift in Sources */,
+				CC1751B02735B8BB0048563A /* NetworkBookModel.swift in Sources */,
+				CCE60B082741C03400DBA97C /* CharacterDetailModelMapping.swift in Sources */,
+				CC1751B92735BE8B0048563A /* AnApiOfIceAndFireAPI.swift in Sources */,
+				CCBB615327400DF000B8B26B /* BookDetailTableViewCell.swift in Sources */,
+				CCBB615D27400EAC00B8B26B /* BookDetailViewController.swift in Sources */,
+				CCF920EA2740780600E0D8DE /* BookDetailModelMapping.swift in Sources */,
+				CCE9E37627405AD2003EF938 /* CharacterListModelMapping.swift in Sources */,
+				CC580C9427430A0100B6EF7A /* HouseDetailModelMapping.swift in Sources */,
+				CC988D88273F0AB500AED935 /* BookListModel.swift in Sources */,
+				CCF920E427405E2000E0D8DE /* BookListModelMapping.swift in Sources */,
+				CCA910252741A1C900DDF09B /* CharacterDetailNavigableToCharacterTableViewCell.swift in Sources */,
+				CC16EF322742BFF400C60D35 /* CharacterDetailLabeledNavigableToHouseTableViewCell.swift in Sources */,
+				CC7773C9274716DB00727218 /* UIImage+Extensions.swift in Sources */,
+				CC580C9E27430AE700B6EF7A /* BaseModel.swift in Sources */,
+				CC988D95273F3D1F00AED935 /* HouseListModel.swift in Sources */,
+				CCE60AF42741BF1100DBA97C /* CharacterDetailNavigableToBookTableViewCell.swift in Sources */,
+				CCD1F7F42735B41800EDB865 /* AppDelegate.swift in Sources */,
+				CC22A76D273696D800A5741A /* BooksTableViewCell.swift in Sources */,
+				CCBB615727400E0A00B8B26B /* BookDetailNavigableTableViewCell.swift in Sources */,
+				CCA9101F2741A16F00DDF09B /* CharacterDetailTableViewCell.swift in Sources */,
+				CC988D8C273F0AF800AED935 /* CharacterListModel.swift in Sources */,
+				CC580C852743092A00B6EF7A /* HouseDetailTableViewCell.swift in Sources */,
+				CCE9E37327405A43003EF938 /* HouseListModelMapping.swift in Sources */,
+				CC580C882743093F00B6EF7A /* HouseDetailLabeledTableViewCell.swift in Sources */,
+				CC988D82273F05F400AED935 /* CharactersTableViewController.swift in Sources */,
+				CC55A0832747874D00F02F08 /* UITableViewController+Extensions.swift in Sources */,
+				CC1751B32735B9100048563A /* NetworkCharacterModel.swift in Sources */,
+				CCD1F7F62735B41800EDB865 /* SceneDelegate.swift in Sources */,
+				CC580C8E2743097E00B6EF7A /* HouseDetailLabeledNavigableToCharacterTableViewCell.swift in Sources */,
+				CC580C9827430A3000B6EF7A /* HouseDetailTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CCD1F7F92735B41800EDB865 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD1F7FA2735B41800EDB865 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCD1F8012735B42300EDB865 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCD1F8022735B42300EDB865 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCD1F8052735B42300EDB865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCD1F8062735B42300EDB865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCD1F8082735B42300EDB865 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "App of Ice and Fire/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.bme.aut.ios.App-of-Ice-and-Fire";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CCD1F8092735B42300EDB865 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "App of Ice and Fire/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "hu.bme.aut.ios.App-of-Ice-and-Fire";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCD1F7EB2735B41800EDB865 /* Build configuration list for PBXProject "App of Ice and Fire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD1F8052735B42300EDB865 /* Debug */,
+				CCD1F8062735B42300EDB865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD1F8072735B42300EDB865 /* Build configuration list for PBXNativeTarget "App of Ice and Fire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCD1F8082735B42300EDB865 /* Debug */,
+				CCD1F8092735B42300EDB865 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CCD1F80B2735B5F000EDB865 /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CCD1F80C2735B5F000EDB865 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CCD1F80B2735B5F000EDB865 /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		CCD1F7FC2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CCD1F7FD2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodel */,
+			);
+			currentVersion = CCD1F7FD2735B41800EDB865 /* App_of_Ice_and_Fire.xcdatamodel */;
+			path = App_of_Ice_and_Fire.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CCD1F7E82735B41800EDB865 /* Project object */;
+}

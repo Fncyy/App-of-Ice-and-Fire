@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="19H1417" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Book" representedClassName="Book" syncable="YES" codeGenerationType="class">
+        <attribute name="country" optional="YES" attributeType="String"/>
+        <attribute name="identifier" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="isbn" optional="YES" attributeType="String"/>
+        <attribute name="mediaType" optional="YES" attributeType="String"/>
+        <attribute name="numberOfPages" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="publisher" optional="YES" attributeType="String"/>
+        <attribute name="released" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="authors" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BookAuthor" inverseName="book" inverseEntity="BookAuthor"/>
+        <relationship name="povCharacters" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="BookPovCharacter" inverseName="book" inverseEntity="BookPovCharacter"/>
+    </entity>
+    <entity name="BookAuthor" representedClassName="BookAuthor" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="authors" inverseEntity="Book"/>
+    </entity>
+    <entity name="BookPovCharacter" representedClassName="BookPovCharacter" syncable="YES" codeGenerationType="class">
+        <attribute name="identifier" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Book" inverseName="povCharacters" inverseEntity="Book"/>
+    </entity>
+    <entity name="Character" representedClassName="Character" syncable="YES" codeGenerationType="class">
+        <attribute name="born" optional="YES" attributeType="String"/>
+        <attribute name="culture" optional="YES" attributeType="String"/>
+        <attribute name="died" optional="YES" attributeType="String"/>
+        <attribute name="fatherId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="gender" optional="YES" attributeType="String"/>
+        <attribute name="identifier" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="motherId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="spouseId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="aliases" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CharacterAlias" inverseName="character" inverseEntity="CharacterAlias"/>
+        <relationship name="allegiances" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CharacterAllegiance" inverseName="character" inverseEntity="CharacterAllegiance"/>
+        <relationship name="playedBy" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CharacterPlayedBy" inverseName="character" inverseEntity="CharacterPlayedBy"/>
+        <relationship name="povBooks" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CharacterPovBook" inverseName="character" inverseEntity="CharacterPovBook"/>
+        <relationship name="titles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CharacterTitle" inverseName="character" inverseEntity="CharacterTitle"/>
+        <relationship name="tvSeasons" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CharacterTvSeason" inverseName="character" inverseEntity="CharacterTvSeason"/>
+    </entity>
+    <entity name="CharacterAlias" representedClassName="CharacterAlias" syncable="YES" codeGenerationType="class">
+        <attribute name="alias" attributeType="String"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="aliases" inverseEntity="Character"/>
+    </entity>
+    <entity name="CharacterAllegiance" representedClassName="CharacterAllegiance" syncable="YES" codeGenerationType="class">
+        <attribute name="houseId" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="allegiances" inverseEntity="Character"/>
+    </entity>
+    <entity name="CharacterPlayedBy" representedClassName="CharacterPlayedBy" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="playedBy" inverseEntity="Character"/>
+    </entity>
+    <entity name="CharacterPovBook" representedClassName="CharacterPovBook" syncable="YES" codeGenerationType="class">
+        <attribute name="bookId" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="povBooks" inverseEntity="Character"/>
+    </entity>
+    <entity name="CharacterTitle" representedClassName="CharacterTitle" syncable="YES" codeGenerationType="class">
+        <attribute name="title" attributeType="String"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="titles" inverseEntity="Character"/>
+    </entity>
+    <entity name="CharacterTvSeason" representedClassName="CharacterTvSeason" syncable="YES" codeGenerationType="class">
+        <attribute name="season" attributeType="String"/>
+        <relationship name="character" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Character" inverseName="tvSeasons" inverseEntity="Character"/>
+    </entity>
+    <entity name="House" representedClassName="House" syncable="YES" codeGenerationType="class">
+        <attribute name="coatOfArms" optional="YES" attributeType="String"/>
+        <attribute name="currentLordId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="diedOut" optional="YES" attributeType="String"/>
+        <attribute name="founded" optional="YES" attributeType="String"/>
+        <attribute name="founderId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="heirId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="identifier" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="overlordId" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="region" optional="YES" attributeType="String"/>
+        <attribute name="words" optional="YES" attributeType="String"/>
+        <relationship name="ancestralWeapons" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HouseAncestralWeapon" inverseName="house" inverseEntity="HouseAncestralWeapon"/>
+        <relationship name="cadetBranches" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HouseCadetBranch" inverseName="house" inverseEntity="HouseCadetBranch"/>
+        <relationship name="seats" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HouseSeat" inverseName="house" inverseEntity="HouseSeat"/>
+        <relationship name="titles" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="HouseTitle" inverseName="house" inverseEntity="HouseTitle"/>
+    </entity>
+    <entity name="HouseAncestralWeapon" representedClassName="HouseAncestralWeapon" syncable="YES" codeGenerationType="class">
+        <attribute name="name" attributeType="String"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="ancestralWeapons" inverseEntity="House"/>
+    </entity>
+    <entity name="HouseCadetBranch" representedClassName="HouseCadetBranch" syncable="YES" codeGenerationType="class">
+        <attribute name="houseId" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="cadetBranches" inverseEntity="House"/>
+    </entity>
+    <entity name="HouseSeat" representedClassName="HouseSeat" syncable="YES" codeGenerationType="class">
+        <attribute name="seat" attributeType="String"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="seats" inverseEntity="House"/>
+    </entity>
+    <entity name="HouseTitle" representedClassName="HouseTitle" syncable="YES" codeGenerationType="class">
+        <attribute name="title" attributeType="String"/>
+        <relationship name="house" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="House" inverseName="titles" inverseEntity="House"/>
+    </entity>
+    <elements>
+        <element name="Book" positionX="-88" positionY="-19" width="128" height="193"/>
+        <element name="BookAuthor" positionX="101" positionY="92" width="128" height="73"/>
+        <element name="BookPovCharacter" positionX="-272" positionY="96" width="128" height="73"/>
+        <element name="Character" positionX="120" positionY="-5" width="128" height="268"/>
+        <element name="CharacterAlias" positionX="-36" positionY="99" width="128" height="73"/>
+        <element name="CharacterAllegiance" positionX="-27" positionY="117" width="128" height="73"/>
+        <element name="CharacterPlayedBy" positionX="-63" positionY="99" width="128" height="73"/>
+        <element name="CharacterPovBook" positionX="-18" positionY="135" width="128" height="73"/>
+        <element name="CharacterTitle" positionX="-45" positionY="90" width="128" height="73"/>
+        <element name="CharacterTvSeason" positionX="-72" positionY="90" width="128" height="73"/>
+        <element name="House" positionX="-54" positionY="117" width="128" height="268"/>
+        <element name="HouseAncestralWeapon" positionX="-27" positionY="207" width="128" height="73"/>
+        <element name="HouseCadetBranch" positionX="-18" positionY="216" width="128" height="73"/>
+        <element name="HouseSeat" positionX="-36" positionY="198" width="128" height="73"/>
+        <element name="HouseTitle" positionX="-45" positionY="189" width="128" height="73"/>
+    </elements>
+</model>
