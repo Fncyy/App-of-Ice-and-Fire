@@ -18,7 +18,9 @@ For example from a selected book go to one of the pov characters, from there nav
 The application is separated into three layers: data, domain and view.
 Between these layers Resolver helps with injecting the necessary classes.
 To integrate Resolver into the project I used Swift Package Manager.
-
+The project is properly structured into folders in Xcode,
+however when I tried to use physical grouping instead of logical ones, Xcode was unable to find them.
+Therefore I stuck with logical grouping only.
 ### Data
 Firstly here are the classes that interact with the API with network calls. 
 For these I used UrlSession to get the data and escaping callbacks to return the results. 
